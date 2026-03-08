@@ -9,8 +9,7 @@ A survey of Streaming Large Language Models</h1></div>
 <p align="center">
 <a href="https://arxiv.org/abs/2603.04592" target="_blank"><img alt="Demo" src="https://img.shields.io/badge/arxiv-2603.04592-DA644E?logo=arxiv" /></a>
 <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
-<img src="https://img.shields.io/github/last-commit/EIT-NLP
-/Awesome-Streaming-LLMs/main?logo=github&color=orange" alt="GitHub last commit (branch)">
+<img src="https://img.shields.io/github/last-commit/EIT-NLP/Awesome-Streaming-LLMs/main?logo=github&color=orange" alt="GitHub last commit (branch)">
 </p>
 
 📢 **News:** We released the first comprehensive survey on Streaming LLMs/MLLMs! See https://arxiv.org/abs/2603.04592.
@@ -40,19 +39,19 @@ We cut through the confusing terminology of "streaming generation", "streaming i
 
 ### Formal Definition
 We formulate the modeling process as a conditional probability distribution $P(Y|X)$, where $X = (x_1, \dots, x_M)$ denotes the bounded input stream and $Y = (y_1, \dots, y_N)$ denotes the output stream. This distribution can be factorized as:
-$$P(Y \mid X) = \prod_{t=1}^{N} P\big(y_t \mid y_{<t}, h_{1:\phi(t)}(X); \theta\big),$$
+$$P(Y|X) = \prod_{t=1}^{N} P\big(y_t | y_{<t}, h_{1:\phi(t)}(X);\theta\big),$$
 
-where $\theta$ denotes the LLM parameters, $h_{\phi(t)}(X)=\operatorname{LLM}(x_{\phi(t)})$ represents the hidden states corresponding to the input $x_{\phi(t)}$, and $\phi(t)$ is a **interaction decision function** to determine the input stream visible at generation step $t$.
+where $\theta$ denotes the LLM parameters, $h_{\phi(t)}(X)=llm(x_{\phi(t)})$ represents the hidden states corresponding to the input $x_{\phi(t)}$, and $\phi(t)$ is a **interaction decision function** to determine the input stream visible at generation step $t$.
 
 <!-- where:
 - $\theta$ denotes the LLM parameters.
-- $h_{\phi(t)}(X)=\operatorname{LLM}(x_{\phi(t)})$ represents the hidden states corresponding to the input $x_{\phi(t)}$.
+- $h_{\phi(t)}(X)=llm(x_{\phi(t)})$ represents the hidden states corresponding to the input $x_{\phi(t)}$.
 - $\phi(t)$ is an **interaction decision function** to determine the input stream visible at generation step $t$. -->
 
 Then:
-- Output-Streaming LLMs: $\phi(t)=M$ for all $t\in \{1,2,\dots,N\}$, $h_{1:\phi(t)}(X) = h_{1:M}(X) = \operatorname{LLM}(X_{1:M}).$
-- Sequential-Streaming LLMs: $\phi(t)=M$ for all $t\in \{1,2,\dots,N\}$, $h_{1:M}(X) = \{ \operatorname{LLM}(x_1), \dots, \operatorname{LLM}(x_M) \}.$
-- Concurrent-Streaming LLMs: $1\le \dots \le \phi(t)\le \phi(t+1)\le \dots \le M$, $h_{\phi(t)}(X) = \operatorname{LLM}(X_{\phi(t)}, y_{<t}).$
+- Output-Streaming LLMs: $\phi(t)=M$ for all $t\in \{1,2,...,N \}$, $h_{1:\phi(t)}(X) = h_{1:M}(X) = llm(X_{1:M}).$
+- Sequential-Streaming LLMs: $\phi(t)=M$ for all $t\in \{1,2,...,N \}$, $h_{1:M}(X) = \{ llm(x_1), \dots, llm(x_M) \}.$
+- Concurrent-Streaming LLMs: $1\le \dots \le \phi(t)\le \phi(t+1)\le \dots \le M$, $h_{\phi(t)}(X) = llm(X_{\phi(t)},y_{<t}).$
 
 
 Concurrent-Streaming is built upon the foundation of the previous two paradigms, representing the evolution **from static inference, to continuous streaming perception, to full-duplex dynamic interaction.**
