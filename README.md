@@ -42,7 +42,7 @@ We formulate the modeling process as a conditional probability distribution $P(Y
 
 $$P(Y|X) = \prod_{t=1}^{N} P\big(y_t | y_{\lt t}, h_{1:\phi(t)}(X);\theta\big),$$
 
-where $\theta$ denotes the LLM parameters, $h_{\phi(t)}(X)=llm(x_{\phi(t)})$ represents the hidden states corresponding to the input $x_{\phi(t)}$, and $\phi(t)$ is a **interaction decision function** to determine the input stream visible at generation step $t$.
+where $\theta$ denotes the LLM parameters, $h_{\phi(t)}(X)=llm(x_{\phi(t)})$ is the hidden states corresponding to the input $x_{\phi(t)}$, and $\phi(t)$ is a **interaction decision function** to determine the input stream visible at generation step $t$.
 
 <!-- where:
 - $\theta$ denotes the LLM parameters.
