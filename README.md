@@ -21,19 +21,17 @@ This repository provides a comprehensive landscape of current **streaming LLMs/M
 We cut through the confusing terminology of "streaming generation", "streaming input" and "interactive streaming" by introducing a unified, formal definition for Streaming LLMs. Based on **Data Flow and Interaction Concurrency**, we categorize Streaming LLMs into three progressive paradigms.
 
 
-<div style="display:flex; gap:14px; align-items:center;">
-  <div style="flex:0 0 45%;">
-    <img src="Assets/Top.png"  width="100%">
-  </div>
-  <div style="flex:1;">
-    <b>👉 Category I: Output-Streaming LLMs</b> <br>
-    <i>(Left)</i> Performs streaming generation <i>after</i> static reading.<br>
-    <b>👉 Category II: Sequential-Streaming LLMs</b> <br>
-    <i>(Middle)</i> Performs streaming generation <i>after</i> streaming reading.<br>
-    <b>👉 Category III: Concurrent-Streaming LLMs</b> <br>
-    <i>(Right)</i> Performs streaming generation <i>while</i> streaming reading.<br>
-  </div>
-</div>
+<p>
+  <img src="Assets/Top.png" width="45%" align="left" />
+  <br><br>
+  <b>👉 Category I: Output-Streaming LLMs</b><br>
+  <i>(Left)</i> Performs streaming generation <i>after</i> static reading.<br>
+  <b>👉 Category II: Sequential-Streaming LLMs</b><br>
+  <i>(Middle)</i> Performs streaming generation <i>after</i> streaming reading.<br>
+  <b>👉 Category III: Concurrent-Streaming LLMs</b><br>
+  <i>(Right)</i> Performs streaming generation <i>while</i> streaming reading.
+</p>
+<br clear="left" />
 
 
 ### Formal Definition
