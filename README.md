@@ -12,7 +12,9 @@ A survey of Streaming Large Language Models</h1></div>
 <img src="https://img.shields.io/github/last-commit/EIT-NLP/Awesome-Streaming-LLMs/main?logo=github&color=orange" alt="GitHub last commit (branch)">
 </p>
 
-📢 **News:** We released the first comprehensive survey on Streaming LLMs/MLLMs! See https://arxiv.org/abs/2603.04592.
+📢 **News:** 
+* **[2026.04] Our survey has been accepted by ACL 2026 Findings.**
+* **[2026.03]** We released the **first comprehensive survey** on Streaming LLMs/MLLMs! See https://arxiv.org/abs/2603.04592.
 
 ## 1. Overview
 This repository provides a comprehensive landscape of current **streaming LLMs/MLLMs**, covering multi-modal streaming applications across text, audio, and video.
