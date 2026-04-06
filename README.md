@@ -54,7 +54,7 @@ If you find our paper of this resource helpful, please consider cite:
 
 ## 📢 News <a id="news"></a>
 * **[2026.04] Our survey has been accepted by ACL 2026 Findings.**
-* **[2026.03]** We released the **first comprehensive survey** on Streaming LLMs/MLLMs! See https://arxiv.org/abs/2603.04592.
+* **[2026.03]** We released the **first comprehensive [survey](https://arxiv.org/abs/2603.04592)** on Streaming LLMs/MLLMs!
 
 ## 💡 Overview <a id="overview"></a>
 This repository provides a comprehensive landscape of current **streaming LLMs/MLLMs**, covering multi-modal streaming applications across text, audio, and video.
