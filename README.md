@@ -1,8 +1,6 @@
 <!-- # Awesome-Streaming-LLMs/MLLMs -->
 <div align="center">
-<h1><img src="Assets/wave.png" height="34" style="vertical-align: middle;" /> From Static Inference to Dynamic Interaction: 
-
-A survey of Streaming Large Language Models</h1></div>
+<h1><img src="Assets/wave.png" height="34" style="vertical-align: middle;" /> Awesome Streaming LLMs</h1></div>
 
 
 
@@ -12,11 +10,53 @@ A survey of Streaming Large Language Models</h1></div>
 <img src="https://img.shields.io/github/last-commit/EIT-NLP/Awesome-Streaming-LLMs/main?logo=github&color=orange" alt="GitHub last commit (branch)">
 </p>
 
-📢 **News:** 
+> <strong> From Static Inference to Dynamic Interaction: A survey of Streaming Large Language Models </strong>
+>
+> <a href="https://scholar.google.com/citations?user=Amv2QE8AAAAJ" rel="nofollow">Junlong Tong</a><sup>1,2</sup>, 
+<a href="https://scholar.google.com/citations?user=CEiW_HQAAAAJ" rel="nofollow">Zilong Wang</a><sup>2</sup>, 
+Yujie Ren</a><sup>2</sup>, 
+Peiran Yin</a><sup>2</sup>, 
+<a href="https://harrisonwu42.github.io/" rel="nofollow">Hao Wu</a><sup>2</sup>, 
+<a href="https://scholar.google.com/citations?user=Z7u9yEoAAAAJ" rel="nofollow">Wei Zhang</a><sup>2</sup>, 
+<a href="https://chin-gyou.github.io/" rel="nofollow">Xiaoyu Shen</a><sup>†,2</sup> 
+>
+> <sup>1</sup>Shanghai Jiao Tong University
+>
+> <sup>2</sup>Institute of Digital Twin, Eastern Institute of Technology, Ningbo
+>
+> <sup>†</sup> Corresponding Author.
+>
+> Contact: jl-tong@sjtu.edu.cn, xyshen@eitech.edu.cn
+
+If you find our paper of this resource helpful, please consider cite:
+```tex
+@article{Tong2026Streaming,
+      title={From Static Inference to Dynamic Interaction: A Survey of Streaming Large Language Models}, 
+      author={Junlong Tong and Zilong Wang and YuJie Ren and Peiran Yin and Hao Wu and Wei Zhang and Xiaoyu Shen},
+      year={2026},
+      eprint={2603.04592},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2603.04592}, 
+}
+```
+
+> [!IMPORTANT]
+> We actively maintain this repository and welcome community contributions.
+> If you would like to:
+> 
+> - Add newly released Streaming LLMs/MLLMs papers  
+> - Propose refinements to our taxonomy  
+> - Correct or update existing entries  
+> - Discuss classification or methodology  
+> 
+> Please submit a [pull request](https://github.com/EIT-NLP/Awesome-MLLM-Compression/pulls) or contact the authors.
+
+## 📢 News <a id="news"></a>
 * **[2026.04] Our survey has been accepted by ACL 2026 Findings.**
 * **[2026.03]** We released the **first comprehensive survey** on Streaming LLMs/MLLMs! See https://arxiv.org/abs/2603.04592.
 
-## 1. Overview
+## 💡 Overview <a id="overview"></a>
 This repository provides a comprehensive landscape of current **streaming LLMs/MLLMs**, covering multi-modal streaming applications across text, audio, and video.
 
 We cut through the confusing terminology of "streaming generation", "streaming input" and "interactive streaming" by introducing a unified, formal definition for Streaming LLMs. Based on **Data Flow and Interaction Concurrency**, we categorize Streaming LLMs into three progressive paradigms.
@@ -66,29 +106,15 @@ Concurrent-Streaming is built upon the foundation of the previous two paradigms,
 - Sequential-Streaming LLMs: Continuous Perception & Streaming Context Management.
 - Concurrent-Streaming LLMs: Architecture Adaptation & Interaction Decision Policy.
 
-### Citation
-If you find this repository useful, please cite this paper:
-```tex
-@article{Tong2026Streaming,
-      title={From Static Inference to Dynamic Interaction: A Survey of Streaming Large Language Models}, 
-      author={Junlong Tong and Zilong Wang and YuJie Ren and Peiran Yin and Hao Wu and Wei Zhang and Xiaoyu Shen},
-      year={2026},
-      eprint={2603.04592},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2603.04592}, 
-}
-```
 
+## 📚 Contents <a id="contents"></a>
+- [1. Overview](#overview)
+- [2. Content](#content)
+- [3. Streaming Taxonomy](#tax)
+- [4. Streaming Applications and Tasks](#app)
+- [5. Streaming Benchmark](#benchmark)
 
-## 2. Content
-- [1. Overview](#1-overview)
-- [2. Content](#2-content)
-- [3. Streaming Taxonomy](#3-streaming-taxonomy)
-- [4. Streaming Applications and Tasks](#4-streaming-applications-and-tasks)
-- [5. Streaming Benchmark](#5-streaming-benchmark)
-
-## 3. Streaming Taxonomy
+## ✨ Streaming Taxonomy <a id="tax"></a>
 [To Do]
 <!-- ### Output-streaming
 ### Sequential-streaming
@@ -96,12 +122,12 @@ If you find this repository useful, please cite this paper:
 
 
 
-## 4. Streaming Applications and Tasks
+## 🔧 Streaming Applications and Tasks <a id="app"></a>
 <!-- ### Text Streaming Tasks
 ### Speech Streaming Tasks
 ### Video Streaming Tasks
 ### Other Streaming Tasks -->
 [To Do]
 
-## 5. Streaming Benchmark
+## 📋 Streaming Benchmark <a id="benchmark"></a>
 [To Do]
